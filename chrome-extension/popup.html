@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bulk Fill</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>批量填充</h1>
+        <button id="pasteAndFill" type="button">读取剪贴板并填充</button>
+      </header>
+
+      <textarea id="bulkText" spellcheck="false" placeholder="粘贴产品资料，例如：
+产品名称：Dynamic Full Color LCD Electronic Shelf Label
+关键词：Full Color ESL; LCD Price Tag; Inventory Management Display
+产品型号：HM-2026-02
+产品亮点1：Full-color LCD screen for dynamic retail pricing.
+港口：Huangpu"></textarea>
+
+      <div class="actions">
+        <button id="fill" type="button">填充当前页面</button>
+        <button id="preview" type="button">预览匹配</button>
+        <button id="template" type="button">插入模板</button>
+      </div>
+
+      <section id="status" aria-live="polite"></section>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
